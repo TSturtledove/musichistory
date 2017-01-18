@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Music History</title>
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+  <div>
+    <div class="divSpacing">
+      <nav class="barForNav">
+        <ul class="listStyle">
+          <li>View Music</li>
+          <li><a href="#">Add Music</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="lowerBoxes divSpacing">
+      <div class="filterBox">
+        <div>
+          <label>Song length:</label><br>
+          <input type="range" min="1" max="10" value="5">
+        </div>
+        <div>
+          <label class="mainlabel">Artist:</label>
+          <select class="ChoiceBox" name="options" value="options">
+            <!-- <optgroup> -->
+              <option value="opt" selected disabled>Options</option>
+              <option value="SarahSparks">Sarah Sparks</option>
+              <option value="SoundOfGuns">Sound of Guns</option>
+              <option value="KinaGrannis">Kina Grannis</option>
+              <option value="AudioA">Audio Adrenaline</option>
+              <option value="SawanoHiroyuki">澤野弘之</option>
+            <!-- </optgroup> -->
+          </select>
+        </div>
+        <div>
+          <label class="mainlabel">Album:</label>
+          <select class="ChoiceBox" name="options" value="options">
+              <option value="opt" selected disabled>Options</option>
+              <option value="SarahSparksAlbum">The Ways and Means</option>
+              <option value="SoundOfGunsAlbum">Angels and Enemies</option>
+              <option value="KinaGrannisAlbum">Stairwells</option>
+              <option value="AudioAAlbum">Hit Parade</option>
+              <option value="SawanoHiroyuki">ＴＶアニメ「進撃の巨人」オリジナルサウンドトラック</option>
+          </select>
+        </div>
+        <div>
+          <label>Genre:</label>
+          <div class="checkers">
+            <div class="checkers">
+              <input type="checkbox" name="genre" value="Rock">
+              <input type="checkbox" name="genre" value="Pop">
+              <input type="checkbox" name="genre" value="Blues">
+            </div>
+            <div class="checkers">
+              <input type="checkbox" name="genre" value="Classical">
+              <input type="checkbox" name="genre" value="Jazz">
+              <input type="checkbox" name="genre" value="Hip Hop">
+            </div>
+          </div>
+        </div>
+        <div class="filterbuttonDiv">
+          <input class="filterbutton" type="submit" value="Filter">
+        </div>
+
+      </div>
+      <div id="mainPageBox" class="titleBox">
+        <h2 class="textcolor">The Surgeon</h2>
+        <ul class="songlistStyle">
+          <li>Sarah Sparks</li>
+          <li>The Ways and Means</li>
+          <li>Rock</li>
+        </ul>
+        <h2 class="textcolor">Sometimes</h2>
+        <ul class="songlistStyle">
+          <li>Sound of Guns</li>
+          <li>Angels and Enemies</li>
+          <li>Rock</li>
+        </ul>
+        <h2 class="textcolor">Gone</h2>
+        <ul class="songlistStyle">
+          <li>Kina Grannis</li>
+          <li>Stairwells</li>
+          <li>Pop</li>
+        </ul>
+        <h2 class="textcolor">Some kind of Zombie</h2>
+        <ul class="songlistStyle">
+          <li>Audio Adrenaline</li>
+          <li>Hit Parade</li>
+          <li>Rock</li>
+        </ul>
+        <h2 class="textcolor">Ｅ・Ｍ・Ａ</h2>
+        <ul class="songlistStyle">
+          <li>澤野弘之</li>
+          <li>ＴＶアニメ「進撃の巨人」オリジナルサウンドトラック</li>
+          <li>Rock</li>
+        </ul>
+        <span class="added"></span>
+      </div>
+    </div>
+  </div>
+
+<!-- I need a nav bar, an information window,
+and a music selector window.  Maybe think about using boot strap? -->
+
+<!-- Nav bar has view music, add music, profile -->
+
+<!-- music selector window has song length displayed as a range,
+ artist with a drop down option menu, album with a drop down option menu,
+  genre with checkboxes, and a filter/submit button -->
+
+<!-- information window will have song name with
+ artist name, album name, genre listed beneath it-->
+ <script src="song.js"></script>
+</body>
+</html>

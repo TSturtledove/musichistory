@@ -1,0 +1,131 @@
+body {
+  font-family: Verdana, Geneva, sans-serif;
+}
+.divSpacing {
+  margin: 10px;
+  padding: 5px;
+}
+.barForNav {
+  background-color: #ffb4b0;
+  border: 3px solid black;
+}
+
+.listStyle {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+
+}
+
+.listStyle ul {
+  padding: 0;
+  margin: 0;
+
+}
+
+.listStyle li:not(:first-child):before {
+  content: "|";
+}
+
+
+.lowerBoxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filterBox {
+  padding: 25px;
+  background-color: #4dd7fa;
+  border: 3px solid black;
+  width: 20%;
+}
+
+.mainlabel {
+  display: block;
+  margin: 10px 0;
+}
+
+.ChoiceBox {
+  margin-bottom: 5px;
+}
+
+.checkers {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 125px;
+}
+
+/*
+The following is another way to add the label like elements to the
+end of the checkboxes using pseudo classes
+*/
+[type=checkbox]:after {
+  font-size: 1.2em;
+    content: attr(value);
+    margin: -3px 15px;
+    vertical-align: top;
+    white-space:nowrap;
+    display: inline-block;
+}
+
+
+.filterbuttonDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.filterbutton {
+  font-size: 20px;
+}
+
+.titleBox {
+  padding: 5px;
+  background-color: #fefac0;
+  border: 3px solid black;
+  width: 75%;
+}
+
+
+.songlistStyle {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+
+}
+
+.songlistStyle ul{
+  padding: 10px;
+  margin-right: 10px;
+
+}
+
+
+.songlistStyle li:not(:first-child):before {
+  content: " | ";
+  margin-left: 7px;
+}
+
+
+
+.textcolor {
+  margin-left: 10px;
+  color: #785616;
+  font-weight: normal;
+}
+
+
+
+
+/*
+
+navbar background color is the Red = #ffb4b0
+
+music selector window background color is the blue = #4dd7fa
+It's also about one fifth of the window
+
+information window background color is yellow = #fefac0
+with text yellow = #785616
+
+*/
