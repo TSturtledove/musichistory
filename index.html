@@ -14,12 +14,27 @@
     <div class="divSpacing">
       <nav class="barForNav">
         <ul class="listStyle">
-          <li>View Music</li>
-          <li><a href="#">Add Music</a></li>
-          <li><a href="#">Profile</a></li>
+          <li><a href="#" id="link-home">Home</a></li>
+          <li><a href="#" id="link-list">List</a></li>
+          <li><a href="#" id="link-add">Add</a></li>
         </ul>
       </nav>
     </div>
+
+    <section id="home-view">
+      Home
+
+
+
+    </section>
+
+    <section class="hidden" id="list-view">
+      List
+
+
+
+
+
     <div class="lowerBoxes divSpacing">
       <div class="filterBox">
         <div>
@@ -104,6 +119,19 @@
         <span class="added"></span>
       </div>
     </div>
+
+  </section>
+
+  <section class="hidden" id="add-view">
+    <h3>Add a song</h3>
+
+    <input id="songName" type="text" maxlength="25" placeholder="Song name"><br>
+    <input id="artistName" type="text" maxlength="25" placeholder="Artist"><br>
+    <input id="albumName" type="text" maxlength="25" placeholder="Album"><br>
+    <button id="add">Add Song</button>
+
+  </section>
+
   </div>
 
 <!-- I need a nav bar, an information window,
@@ -118,5 +146,8 @@ and a music selector window.  Maybe think about using boot strap? -->
 <!-- information window will have song name with
  artist name, album name, genre listed beneath it-->
  <script src="song.js"></script>
+ <script type="text/javascript" src="home.js"></script>
+ <script type="text/javascript" src="list.js"></script>
+ <script type="text/javascript" src="add.js"></script>
 </body>
 </html>

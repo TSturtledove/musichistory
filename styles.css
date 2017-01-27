@@ -1,10 +1,18 @@
 body {
   font-family: Verdana, Geneva, sans-serif;
+  /*font-size: 2em;*/
+
 }
+
+a {
+  text-decoration: none;
+}
+
 .divSpacing {
   margin: 10px;
   padding: 5px;
 }
+
 .barForNav {
   background-color: #ffb4b0;
   border: 3px solid black;
@@ -116,6 +124,21 @@ end of the checkboxes using pseudo classes
 }
 
 
+ul > li {
+  display: inline;
+  list-style-type: none;
+  margin: 5px 15px 0 15px;
+  /*background-color: goldenrod;*/
+  padding: 5px;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
 
 
 /*
