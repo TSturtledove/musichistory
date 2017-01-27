@@ -36,12 +36,26 @@ function hipHopPiPopulate1() {
     console.log(newStr)
     console.log("what")
     // console.log(oldStr)
-    textDisplay.innerHTML += newStr +" "
+    textDisplay.innerHTML +="<br>" + newStr +" "
   }
 
 }
 
 hipHopPiPopulate1()
 
+// textDisplay.innerHTML += '<h2 class="textcolor">' + songName + '</h2><ul class="songlistStyle"><li>' + artistName + '</li><li>' + albumName + '</li></ul>'
+
+
+// <h2 class="textcolor">Sometimes</h2>
+// <ul class="songlistStyle">
+//   <li>Sound of Guns</li>
+//   <li>Angels and Enemies</li>
+//   <li>Rock</li>
+// </ul>
+
+
+
+
 
 // hey all this is a test
+//music history 2 done
